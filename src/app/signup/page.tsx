@@ -32,7 +32,7 @@ export default function SignUp() {
       const response = await axios.post("/api/users/signup", user)
       console.log(response.data)
 
-      toast({title: "Account created successfully", description: "Please log in now"})
+      toast({title: "Account created successfully", description: "Please check your inbox to verify your account and log in"})
 
       router.push("/login")
 
