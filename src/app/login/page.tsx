@@ -76,6 +76,7 @@ export default function Login() {
           </CardContent>
           <CardFooter className="flex w-full flex-col justify-start items-start"  >
             {btnDisabled ? <Button disabled >{!loading ? "Login" : <Loader2 className="mr-2 w-4 h-4" />}</Button> : <Button onClick={onLogin} >{!loading ? "Login" : <Loader2 className="mr-2 w-4 h-4" />}</Button>}
+          <p className="text-white-400" ><Link href={"/forgotpassword"} >Forgot Password ?</Link></p>
             <p className="text-muted-foreground text-xs mt-5" >Don't have an account? <span className="text-white" ><Link href={"/signup"}>sign up</Link></span></p>
 
           </CardFooter>
